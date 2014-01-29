@@ -24,17 +24,16 @@ Because we now created **data-name="posts"**, need.js will look for **posts.json
 This is the content inside posts.json
 
 ```
-{"posts":[
-    {
-        "author": "Testing testingson",
-        "title": "Test title",
-        "body": "This huge body"
-    },{
-        "author": "Testing testingsons daughter",
-        "title": "Title 2",
-        "body": "This huge body 2"
-    }
-]}
+[{
+"title":"test title",
+"body":"Super long test",
+"author":"Jocke"
+},
+{
+"title":"another title",
+"body":"This text is even longer",
+"author":"Jocke as well"
+}]
 ```
 
 It will start to look for data-posts="container" and duplicate it until there is no more posts in posts.json.
