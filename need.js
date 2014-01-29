@@ -40,11 +40,11 @@ document.addEventListener("DOMContentLoaded", function() { //Like jquery ready
         
     xmlhttp.onreadystatechange = function() {
         if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
-            jsondata = JSON.parse(xmlhttp.responseText); //Json data
+            jsondata = JSON.parse(xmlhttp.responseText); //Json data          
                        
-            for(i=0;i<jsondata[find].length;i++){ //Loop through jsondata
-                clonewrapper = wrapper.cloneNode(true);          
-                object = jsondata[find][i];
+            for(i=0;i<jsondata.length;i++){ //Loop through jsondata
+                clonewrapper = wrapper.cloneNode(true);    
+                object = jsondata[i];
                 for(var key in object) {
                     var textnode = document.createTextNode(object[key]);
                     if(clonewrapper.querySelector('['+query+'='+key+']') !== null){

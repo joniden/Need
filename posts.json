@@ -1,11 +1,10 @@
-{"posts":[
-    {
-        "author": "Testing testingson",
-        "title": "Test title",
-        "body": "This huge body"
-    },{
-        "author": "Testing testingsons daughter",
-        "title": "Title 2",
-        "body": "This huge body 2"
-    }
-]}
+[{
+"title":"test title",
+"body":"Super long test",
+"author":"Jocke"
+},
+{
+"title":"another title",
+"body":"This text is even longer",
+"author":"Jocke as well"
+}]
